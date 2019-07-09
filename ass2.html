@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2. Contact Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        main{
+            width: 640px;
+            margin: 50px auto;
+        }
+        div{
+            width: 50%;
+            float: left;
+        }
+        input[type=text],input[type=email],textarea,select {
+            width: 95%;
+        }
+        textarea{
+            height: 200px
+        }
+        input[type=submit]{
+            color: #ffffff;
+            padding: 12px 20px;
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div>
+        <p>Your name</p>
+        <input type="text" name="name" placeholder="Type your name" required>
+        <p>Your email</p>
+        <input type="email" name="email" placeholder="Type your gmail" required>
+        <p>About project</p>
+        <textarea name="project" placeholder="Write some thing ..."></textarea>
+        <input type="submit" value="submit">
+    </div>
+    <div>
+        <p>Project budget</p>
+        <select name="budget">
+            <option value="notbudget">Not define at the moment</option>
+            <option value="100000">100.000$ for 1 project (2 years)</option>
+            <option value="100000000">100.000.000$ for 1 project (6 months)</option>
+        </select>
+        <p>When would you like to start</p>
+        <select name="start">
+            <option value="nottime">Not define at the moment</option>
+            <option value="100000">Next week</option>
+            <option value="100000000">Next month</option>
+        </select>
+        <p>Are you humant? 21 + 11 = </p>
+        <input type="text" name="question">
+        <p>To better serve you, we kindly ask you to fill in all the form fields. The more we know, the more we are able to help</p>
+
+    </div>
+</main>
+</body>
+</html>
